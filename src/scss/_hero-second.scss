@@ -1,0 +1,28 @@
+.hero-second {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 960px;
+  background-image: url('../img/hero-second-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (max-width: $breakpoint768) {
+    min-height: 600px;
+  }
+
+
+  // .hero-second__logo
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
