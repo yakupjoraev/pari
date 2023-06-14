@@ -177,11 +177,11 @@ body.locked {
 }
 
 .hero.green {
-  background-image: url("../img/hero-bg-1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-animation: bgBreen 4s linear;
-          animation: bgBreen 4s linear;
+  background: url("../img/hero-bg-1.png");
+  background-position: right top;
+  background-size: cover;
+  -webkit-animation: bg 15s linear infinite;
+          animation: bg 15s linear infinite;
 }
 
 .hero.transparent {
@@ -380,6 +380,26 @@ body.locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@-webkit-keyframes bg {
+  0% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: calc(100% + 100vh) calc(-100% - 100vh);
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: calc(100% + 100vh) calc(-100% - 100vh);
+  }
 }
 
 .hero-second {
@@ -2013,12 +2033,6 @@ body.locked {
     max-width: 970px;
   }
 
-  .hero.green {
-    background-size: auto;
-    -webkit-animation: bgBreen 5s linear;
-            animation: bgBreen 5s linear;
-  }
-
   .about {
     padding-top: 80px;
   }
@@ -2302,11 +2316,6 @@ body.locked {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
-  }
-
-  .hero.green {
-    -webkit-animation: bgBreen 7s linear;
-            animation: bgBreen 7s linear;
   }
 
   .hero__inner {
