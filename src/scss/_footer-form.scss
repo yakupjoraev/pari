@@ -158,3 +158,25 @@
   }
 
 }
+
+
+.footer-form-game {
+  background-image: url('../img/game-bg-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #25201C;
+  color: #FFFFFF;
+
+  .form__label {
+    color: #FFC107;
+  }
+
+  .form__btn {
+    background-color: #FFC107;
+  }
+
+  .input,
+  .input-div {
+    border-color: #343A40;
+  }
+}

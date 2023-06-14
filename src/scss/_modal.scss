@@ -1,45 +1,95 @@
 // ************************ Модальное окно ************************ //
-// mf
-.modal__wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    // display: none;
 
-    .modal {
-        background: white;
-        padding: 25px;
-        border-radius: 5px;
-        height: 350px;
-        width: 300px;
-
-        &__title {
-            text-align: center;
-        }
-
-        &__close {
-            cursor: pointer;
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-// ************************ Кнопка вызова модального окна ************************ //
-.modal__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+
+  .footer-form {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    .form__inner {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 30px;
+    }
+
+    .footer-form {
+      padding: 20px 0;
+    }
+
+  }
+
+  @media (max-width: $breakpoint768) {
+    width: 100%;
+
+    .form__inner {
+      row-gap: 15px;
+    }
+
+    .footer-form__inner {
+      padding-top: 20px;
+    }
+
+    .footer-form__top {
+      margin-bottom: 10px;
+    }
+
+    .footer-form__top-label {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .footer-form__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .form__label {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  background-color: transparent;
 }

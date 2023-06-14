@@ -1,5 +1,6 @@
 .job {
   padding-top: 100px;
+  margin-bottom: 50px;
   overflow: hidden;
 
   // .job__marquee
@@ -170,6 +171,8 @@
   // .accordion__header-btn
 
   &__header-btn {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,6 +183,8 @@
     font-size: 12.8px;
     line-height: 19px;
     color: #FFFFFF;
+
+    cursor: pointer;
 
     @media (max-width: $breakpoint992) {
       padding: 10px;
@@ -344,4 +349,27 @@
 
 .bold {
   font-weight: 700;
+}
+
+
+.game-job {
+  padding: 200px 0;
+  background-image: url('../img/game-bg-job.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #FFFFFF;
+
+  .accordion__item {
+    background-color: transparent;
+  }
+
+  .accordion__item::after {
+    content: none;
+  }
+}
+
+
+.game-job {
+  margin-bottom: 0;
 }

@@ -13,15 +13,15 @@
     background-repeat: no-repeat;
     // background-position: center;
     background-size: contain;
-    animation: bgBreen 2s linear infinite;
+    animation: bgBreen 4s linear;
 
     @media (max-width: $breakpoint992) {
       background-size: auto;
-      animation: bgBreen 5s linear infinite;
+      animation: bgBreen 5s linear;
     }
 
     @media (max-width: $breakpoint768) {
-      animation: bgBreen 7s linear infinite;
+      animation: bgBreen 7s linear;
     }
   }
 
@@ -31,6 +31,22 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .hero__title {
+      color: #FFFFFF;
+    }
+
+    .hero__link {
+      color: #FFFFFF;
+    }
+
+    .hero__top img:nth-child(1) {
+      display: none;
+    }
+
+    .hero__top img:nth-child(2) {
+      display: flex;
+    }
   }
 
 
@@ -56,6 +72,10 @@
 
   &__top {
     margin-bottom: 54px;
+
+    // & img:nth-child(2) {
+    //   display: none;
+    // }
 
     @media (max-width: $breakpoint768) {
       margin-bottom: 15px;
@@ -254,14 +274,35 @@
 
 @keyframes bgBreen {
   0% {
-    background-position: center;
-  }
-
-  50% {
-    background-position: 40px -20px;
+    background-position: bottom;
   }
 
   100% {
-    background-position: center;
+    background-position: 40px -20px;
+  }
+}
+
+
+
+.hero-game {
+  background-image: url('../img/hero-bg-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .hero__title {
+    color: #FFFFFF;
+  }
+
+  .hero__link {
+    color: #FFFFFF;
+  }
+
+  .hero__top img:nth-child(1) {
+    display: none;
+  }
+
+  .hero__top img:nth-child(2) {
+    display: flex;
   }
 }
