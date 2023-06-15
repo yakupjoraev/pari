@@ -12,7 +12,7 @@
 
     @media (max-width: $breakpoint992) {
       flex-direction: column;
-      row-gap: 200px;
+      row-gap: 100px;
     }
   }
 
@@ -98,6 +98,7 @@
     display: flex;
     width: 65px;
     height: 95px;
+    cursor: pointer;
   }
 
   // .char__select-avatar
@@ -190,11 +191,16 @@
 
   &__info {
     flex: 0 0 360px;
-    margin-top: 100px;
+    padding-top: 140px;
 
     @media (max-width: $breakpoint992) {
-      flex: 0 1 auto;
-      margin-top: 0;
+      flex: 0 0 auto;
+      // padding-top: 0;
+    }
+
+    @media (max-width: $breakpoint480) {
+      flex: 0 0 280px;
+      // padding-top: 0;
     }
   }
 
@@ -287,5 +293,13 @@
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+  }
+}
+
+.char__info-slider {
+  max-width: 360px;
+
+  @media (max-width: $breakpoint480) {
+    max-width: 280px;
   }
 }

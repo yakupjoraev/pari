@@ -271,7 +271,32 @@ function testSlider() {
 
 }
 
-testSlider()
+testSlider();
+
+function charSlider() {
+  const container = document.querySelector('.char__info-slider');
+
+  if (!container) {
+    return null
+  }
+  // Получаем список всех элементов char__select-item
+  const selectItems = document.querySelectorAll('.char__select-item');
+
+  // Получаем swiper
+  const swiper = new Swiper('.char__info-slider', {
+    slidesPerView: 1,
+  });
+
+  // Добавляем обработчик события клика на каждый элемент char__select-item
+  selectItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      // Активируем соответствующий слайд в swiper
+      swiper.slideTo(index);
+    });
+  });
+}
+
+charSlider();
 
 AOS.init({
   disable: 'phone',
