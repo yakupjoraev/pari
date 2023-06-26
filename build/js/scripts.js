@@ -40,21 +40,47 @@ function burgerMenu() {
 }
 burgerMenu();
 
-function heroBg() {
+function heroBg3() {
+  const link12 = document.querySelector('.hero__link--green--2');
+
+  if (!link12) {
+    return null
+  }
+
   const container = document.querySelector('.hero');
-  const container2 = document.querySelector('.hero-3');
 
   if (!container) {
     return null
   }
 
-  if (container2) {
-    return null
-  }
+  link12.addEventListener('mouseenter', () => {
+    container.classList.add('green')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+
+    link2.style.color = '#343a40';
+    link3.style.color = '#343a40';
+  })
+
+  link12.addEventListener('mouseout', () => {
+    container.classList.remove('green')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+
+    link2.style.color = '#343a40';
+    link3.style.color = '#343a40';
+  })
+
 
   const link1 = document.querySelector('.hero__link--green');
   const link2 = document.querySelector('.hero__link--transparent');
   const link3 = document.querySelector('.hero__link--transparent span');
+
+
 
   link1.addEventListener('mouseenter', () => {
     container.classList.add('green')
@@ -77,6 +103,90 @@ function heroBg() {
     link2.style.color = '#343a40';
     link3.style.color = '#343a40';
   })
+
+
+
+
+  link2.addEventListener('mouseenter', () => {
+    container.classList.add('transparent')
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#fff'
+    });
+
+    link2.style.color = '#fff';
+    link3.style.color = '#fff';
+  })
+
+  link2.addEventListener('mouseout', () => {
+    container.classList.remove('transparent')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+
+    link2.style.color = '#343a40';
+    link3.style.color = '#343a40';
+  })
+
+  link3.addEventListener('mouseenter', () => {
+    container.classList.add('transparent')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#fff'
+    });
+  })
+
+  link3.addEventListener('mouseout', () => {
+    container.classList.remove('transparent')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+  })
+
+
+}
+
+heroBg3()
+
+function heroBg() {
+  const container = document.querySelector('.hero');
+
+  if (!container) {
+    return null
+  }
+
+
+  const link1 = document.querySelector('.hero__link--green');
+  const link2 = document.querySelector('.hero__link--transparent');
+  const link3 = document.querySelector('.hero__link--transparent span');
+
+
+
+  link1.addEventListener('mouseenter', () => {
+    container.classList.add('green')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+
+    link2.style.color = '#343a40';
+    link3.style.color = '#343a40';
+  })
+
+  link1.addEventListener('mouseout', () => {
+    container.classList.remove('green')
+
+    document.querySelectorAll('.menu__item-link').forEach(element => {
+      element.style.color = '#343a40'
+    });
+
+    link2.style.color = '#343a40';
+    link3.style.color = '#343a40';
+  })
+
+
+
 
   link2.addEventListener('mouseenter', () => {
     container.classList.add('transparent')

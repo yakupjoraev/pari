@@ -122,11 +122,18 @@
     min-width: 342px;
     width: fit-content;
     min-height: 90px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     height: fit-content;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     color: #343A40;
+
+    img {
+      user-select: none;
+      pointer-events: none;
+    }
   }
 
   // .hero__link--green
@@ -311,4 +318,111 @@
   background-image: url('../img/hero-3-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+
+
+  .hero__top img:nth-child(2) {
+    display: none;
+  }
+
+  &.transparent {
+    .hero__top img:nth-child(1) {
+      display: none;
+    }
+
+    .hero__top img:nth-child(2) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .hero__middle {
+      margin-bottom: 20px;
+    }
+
+    .hero__top {
+      margin-bottom: 20px;
+    }
+
+    .hero__bottom {
+      flex-direction: column;
+    }
+
+    .hero__link--green--2 {
+      margin-top: 20px;
+    }
+
+    .hero__link--green--2 span {
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: $breakpoint768) {
+    .hero__link.hero__link--transparent {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.hero__link--green--2 {
+  background-color: transparent;
+  border-radius: 15px;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #00C7B1;
+
+    span {
+      user-select: none;
+      pointer-events: none;
+      color: #fff;
+    }
+  }
+
+  span {
+    font-weight: 700;
+    color: #00C7B1;
+    text-decoration: underline;
+  }
+
+  @media (max-width: $breakpoint768) {
+    min-width: 0;
+    width: fit-content;
+    min-height: 0;
+    height: fit-content;
+    background: transparent;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      width: fit-content;
+      min-height: 44px;
+      height: fit-content;
+      background: #00C7B1;
+      border-radius: 15px;
+
+      color: #fff;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      span {
+        user-select: none;
+        pointer-events: none;
+        color: #fff;
+      }
+    }
+  }
+
 }
