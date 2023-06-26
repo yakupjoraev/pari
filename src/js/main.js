@@ -41,8 +41,13 @@ burgerMenu();
 
 function heroBg() {
   const container = document.querySelector('.hero');
+  const container2 = document.querySelector('.hero-3');
 
   if (!container) {
+    return null
+  }
+
+  if (container2) {
     return null
   }
 
@@ -272,6 +277,44 @@ function testSlider() {
 }
 
 testSlider();
+
+function testSlider2() {
+  const container = document.querySelector('.test-2 .test__slider');
+
+  if (!container) {
+    return null
+  }
+
+  var swiper = new Swiper(".test-2 .test__slider", {
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      767: {
+        slidesPerView: 1.8,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    },
+
+    navigation: {
+      nextEl: ".test__slider-next",
+      prevEl: ".test__slider-prev",
+    },
+  });
+
+}
+
+testSlider2();
 
 function charSlider() {
   const container = document.querySelector('.char__info-slider');

@@ -373,3 +373,17 @@
 .game-job {
   margin-bottom: 0;
 }
+
+.job-3 {
+  background-image: url('../img/job-3-bg.png');
+  color: #343A40;
+
+  .accordion__header-btn {
+    background-color: #753BBD;
+  }
+
+  .accordion__header-link,
+  .accordion__content-condition ol a {
+    color: #753BBD;
+  }
+}

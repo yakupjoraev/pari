@@ -1,0 +1,31 @@
+<svg width="415" height="189" viewBox="0 0 415 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<circle cx="76.6778" cy="80.5579" r="9.17606" fill="#343A40"/>
+<circle cx="36.1761" cy="96.3787" r="9.17606" fill="#343A40"/>
+<circle cx="117.178" cy="70.7491" r="9.17606" fill="#343A40"/>
+<circle cx="157.679" cy="70.7491" r="9.17606" fill="#343A40"/>
+<circle cx="76.6778" cy="108.719" r="9.17606" fill="#343A40"/>
+<circle cx="117.178" cy="98.9099" r="9.17606" fill="#343A40"/>
+<circle cx="157.679" cy="98.9099" r="9.17606" fill="#343A40"/>
+<circle cx="76.6778" cy="136.88" r="9.17606" fill="#343A40"/>
+<circle cx="117.178" cy="127.071" r="9.17606" fill="#343A40"/>
+<circle cx="157.679" cy="127.071" r="9.17606" fill="#343A40"/>
+<rect x="1" y="67.6355" width="18.567" height="54.322" stroke="#343A40" stroke-width="2"/>
+</g>
+<g opacity="0.5">
+<circle cx="333.177" cy="136.88" r="9.17606" transform="rotate(-180 333.177 136.88)" fill="#343A40"/>
+<circle cx="333.177" cy="108.719" r="9.17606" transform="rotate(-180 333.177 108.719)" fill="#343A40"/>
+<circle cx="373.679" cy="92.8984" r="9.17606" transform="rotate(-180 373.679 92.8984)" fill="#343A40"/>
+<circle cx="292.677" cy="118.528" r="9.17606" transform="rotate(-180 292.677 118.528)" fill="#343A40"/>
+<circle cx="252.176" cy="118.528" r="9.17606" transform="rotate(-180 252.176 118.528)" fill="#343A40"/>
+<circle cx="333.177" cy="80.5581" r="9.17606" transform="rotate(-180 333.177 80.5581)" fill="#343A40"/>
+<circle cx="292.677" cy="90.3669" r="9.17606" transform="rotate(-180 292.677 90.3669)" fill="#343A40"/>
+<circle cx="252.176" cy="90.3669" r="9.17606" transform="rotate(-180 252.176 90.3669)" fill="#343A40"/>
+<circle cx="333.177" cy="52.3972" r="9.17606" transform="rotate(-180 333.177 52.3972)" fill="#343A40"/>
+<circle cx="292.677" cy="62.206" r="9.17606" transform="rotate(-180 292.677 62.206)" fill="#343A40"/>
+<circle cx="252.176" cy="62.206" r="9.17606" transform="rotate(-180 252.176 62.206)" fill="#343A40"/>
+<rect x="413.51" y="121.641" width="18.567" height="54.322" transform="rotate(-180 413.51 121.641)" stroke="#343A40" stroke-width="2"/>
+</g>
+<line opacity="0.5" x1="207.581" y1="4.37114e-08" x2="207.581" y2="189" stroke="#343A40" stroke-width="2"/>
+<path d="M86.3521 52.397C86.3521 57.4648 82.2439 61.5731 77.1761 61.5731C72.1083 61.5731 68 57.4648 68 52.397C68 47.3292 72.1083 43.2209 77.1761 43.2209C82.2439 43.2209 86.3521 47.3292 86.3521 52.397Z" fill="#FFC107"/>
+</svg>

@@ -402,6 +402,12 @@ body.locked {
   }
 }
 
+.hero-3 {
+  background-image: url("../img/hero-3-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-second {
   position: relative;
   width: 100%;
@@ -969,6 +975,20 @@ body.locked {
   margin-bottom: 0;
 }
 
+.job-3 {
+  background-image: url("../img/job-3-bg.png");
+  color: #343A40;
+}
+
+.job-3 .accordion__header-btn {
+  background-color: #753BBD;
+}
+
+.job-3 .accordion__header-link,
+.job-3 .accordion__content-condition ol a {
+  color: #753BBD;
+}
+
 .accordion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,6 +1223,23 @@ body.locked {
 .footer-form-game .input,
 .footer-form-game .input-div {
   border-color: #343A40;
+}
+
+.footer-form-3 {
+  background-image: url("../img/job-3-bg.png");
+  color: #343A40;
+}
+
+.footer-form-3 .form__label {
+  color: #753BBD;
+}
+
+.footer-form-3 .form__label svg path {
+  fill: #753BBD;
+}
+
+.footer-form-3 .form__btn {
+  background-color: #753BBD;
 }
 
 .data {
@@ -1580,6 +1617,87 @@ body.locked {
   max-width: 360px;
 }
 
+.char-2 {
+  position: relative;
+  background-image: url("../img/char/char-bg.png");
+}
+
+.char-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 58, 64, 0.5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.char-2 .char__select {
+  position: relative;
+}
+
+.char-2 .char__select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.char-2 .char__info-slider {
+  max-width: 400px;
+}
+
+.char-2 .char__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
+}
+
+.char-2 .char__info-inner {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+}
+
+.char-2 .char__info-descr {
+  max-width: 400px;
+}
+
+.char-2 .char__info-link {
+  background-color: #753BBD;
+}
+
+.char-2 .char__info-top-char {
+  border: 1px solid #343A40;
+  width: 98%;
+}
+
+.char-2 .char__title {
+  margin-bottom: 20px;
+  color: #343A40;
+}
+
+.char-2 .char__map-link {
+  color: #753BBD;
+}
+
+.char-2 .char__map-descr {
+  color: #343A40;
+}
+
 .test {
   position: relative;
   padding: 160px 0 60px;
@@ -1855,6 +1973,63 @@ body.locked {
   background: radial-gradient(50% 50% at 50% 50%, rgba(7, 239, 156, 0.7) 0%, rgba(7, 239, 156, 0) 100%);
 }
 
+.test-2 {
+  background: url("../img/test/test-2-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.test-2::before {
+  content: none;
+}
+
+.test-2 .test__top-text,
+.test-2 .test__title,
+.test-2 .test__descr {
+  color: #343a40;
+}
+
+.test-2 .test__link {
+  background-color: #B40091;
+}
+
+.test-2 .test__slider-container {
+  max-width: 100%;
+}
+
+.test-2 .test__slider {
+  max-width: 1120px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+}
+
+.test-2 .test__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.test-2 .test__slide-power-img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 100%;
+  background-color: #EA0C0C;
+}
+
+.test-2 .test__slide {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #343A404D;
+  border: 0;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  border-radius: 0;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1918,6 +2093,11 @@ body.locked {
   right: 30px;
   cursor: pointer;
   background-color: transparent;
+}
+
+.footer-form-3 {
+  background-image: url("../img/job-3-bg.png");
+  color: #343A40;
 }
 
 @media (min-width: 1024px) {
@@ -2872,6 +3052,24 @@ body.locked {
 
   .char__info-slider {
     max-width: 280px;
+  }
+
+  .char-2 .char__info-slider {
+    max-width: 300px;
+  }
+
+  .char-2 .char__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+  }
+
+  .char-2 .char__info-top-char {
+    width: 70%;
+  }
+
+  .char-2 .char__info-top {
+    padding-top: 40px;
   }
 
   .test__slide-info {

@@ -180,3 +180,20 @@
     border-color: #343A40;
   }
 }
+
+.footer-form-3 {
+  background-image: url('../img/job-3-bg.png');
+  color: #343A40;
+
+  & .form__label {
+    color: #753BBD;
+
+    svg path {
+      fill: #753BBD;
+    }
+  }
+
+  & .form__btn {
+    background-color: #753BBD;
+  }
+}

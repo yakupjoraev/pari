@@ -306,3 +306,9 @@
     background-position: calc(100% + 100vh) calc(-100% - 100vh);
   }
 }
+
+.hero-3 {
+  background-image: url('../img/hero-3-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
